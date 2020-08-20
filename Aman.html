@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    /* Header/logo Title */
+    .header {
+      padding: 25px;
+      text-align: center;
+      background: #000080;
+      color: white;
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 15%; /* IE10 */
+      flex: 20%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {   
+      -ms-flex: 85%; /* IE10 */
+      flex: 80%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #000080;
+    }
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {   
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Aman Srivastava</h1>
+    <p>Masters of Technology,IIT Bombay</p>
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Portfolio
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Projects</a>
+          <a class="dropdown-item" href="#">Publications</a>
+          <a class="dropdown-item" href="#">Gallery</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="row">
+    <div class="side">
+      <h3>About Me</h3>
+      <img class="img-thumbnail" src="photograph.jpg">
+      <p> Hello !!! I am Aman Srivastava, pursued M. Tech. in Centre for Technology Alternatives for Rural Area from IIT Bombay</p>
+      <br>
+      <h4>Technical Strengths</h4>
+      <p>Project and Team Management </p>
+      <p>Public Speaking </p>
+      <p>Decision making and problem solving </p>
+      
+    </div>
+    <div class="main">
+     
+      <h4>Fellowships</h4>
+      <p> 1. CTARA-MoRD Research in Development Fellowship | Ministry of Rural Development, GoI | Guide: Prof. Pennan Chinnasamy, CTARA.</br></p>
+      <p> 2. CTARA-HAL Fellowship | CSR Wing, Hindustan Aeronautics Limited, Bangalore | Guide: Prof. Pennan Chinnasamy, CTARA. </br></p>
+ 
+      <h4> Conference Publications</h4>
+      <p> 1.Srivastava, A., & Chinnasamy, P. (2020). Sustainable water management using ancient tank cascade technology in rural areas, presented at 2nd International Conference on Rural Technology Development and Delivery (RTDD-2020), Indian Institute of Technology Madras, 12-14 March 2020. </br></p>
+      <p> 2.Srivastava, A., Chinnasamy, P., & Singh, S. (2019). Holistic groundwater and surface water management for sustaining water resources in rapidly urbanizing cities: a case study in Madurai, India, presented at 1st International Conference on Towards Sustainable Water Future, Divecha Centre of Climate Change and Sustainable Water Future Programme, Indian Institute of Science, Bangalore, 24-27 September 2019. </br></p>
+      <p> 3.Srivastava, A., & Chinnasamy, P. (2019). Study of Vandiyur tank cascade system in Madurai: Exploring land use/land cover change, rainfall, and groundwater, presented at International Conference on Climate Change Impact, Vulnerability, and Assessment (CCIVA-2019), Indian Institute of Technology Kharagpur.</br></p>
+
+      <h4> Scholastic Achievements</h4>
+      <p> 1. Institute Medalist for scoring 1st rank in M. Tech., TD at CTARA-IIT Bombay </br></p>
+      <p> 2. Institute Medalist for scoring 2nd rank in B. Tech.,CE at Govt. College of Engineering Jalgaon </br></p>
+      <p> 3. Received AA (100/100) in M. Tech. Dissertation at CTARA, IIT Bombay </br></p>
+      <p> 4. Elected for 7 diverse poition of Responsibilities in Technical, Social , Cultural and Sports Genre at IIT Bombay </br></p>
+      <p> 5. Awarded 5 times Indian Air Force Benevolent Association's Excellence Scholarship in B. Tech/ and M. Tech. </br></p>
+    </div>
+  </div>
+
+  <div class="footer"></div>
+
+</body>
+</html>
